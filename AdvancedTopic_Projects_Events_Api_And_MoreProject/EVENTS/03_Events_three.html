@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+
+<body>
+    <!-- <h1>Chai Aur JavaScript</h1> -->
+    <h1> Start Should Change The Background Color Every Second </h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+
+<script src="Events_three.js">
+
+    const sayDate = function (strr) {
+        console.log(strr, Date.now())
+    }
+
+    const intervalid = setInterval(sayDate, 1000, "Lalit")
+
+    clearInterval(intervalid)
+</script>
+
+</html>
